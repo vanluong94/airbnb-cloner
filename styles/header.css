@@ -1,0 +1,44 @@
+.site-header-wrapper{
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.site-menu ul.menu > li.menu-item > a{
+	padding: 10px 15px;
+	border-radius: 30px;
+	margin-left: 7px;
+	font-weight: 500;
+}
+
+.site-menu ul.menu li.menu-item > a:hover{
+	background-color:#efefefa6;
+}
+
+.site-menu ul.menu > li.menu-item.has-children{
+	position: relative;
+}
+
+.site-menu ul.menu > li.menu-item.has-children > ul.sub-menu{
+	position: absolute;
+	right: 0;
+	margin-top: 20px;
+	min-width: 200px;
+	display: none;
+}
+
+.site-menu ul.menu > li.menu-item.has-children > ul > li.sub-menu-item > a{
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 15px 20px;
+	border-radius: 0px;
+}
+
+.site-menu .menu .menu-item.has-children > a:after{
+	content: "\f078";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 11px;
+	margin-left: 5px;
+}

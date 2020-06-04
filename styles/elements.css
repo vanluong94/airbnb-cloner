@@ -1,0 +1,127 @@
+/* HOME SEARCH SECTION BEGIN */
+
+.search-section .nav-tabs .nav-link {
+    border: 0;
+    padding: 5px 0px;
+    margin-right: 20px;
+}
+
+.search-section .nav-tabs .nav-link.active {
+    border-bottom: 2px solid rgb(34,34,34);
+}
+
+.search-section .nav-tabs {
+    border-bottom: 0;
+}
+
+#home-search-form{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr auto;
+}
+
+#home-search-form .form-group{
+	padding: 10px 20px;
+	margin: 0px;
+	border: 2px solid transparent;
+	position: relative;
+}
+
+#home-search-form .form-group:not(.form-submit):hover{
+	border: 2px solid rgb(209, 209, 209);
+}
+
+#home-search-form .form-group.focusing {
+    border: 2px solid rgb(34,34,34);
+}
+
+#home-search-form .form-group:not(.form-submit):not(:first-child)::before{
+	content: '';
+	width: 1px;
+	height: 70%;
+	background-color: #D7D8D7;
+	position: absolute;
+	left: -1px;
+    top: 50%;
+	transform: translate(0,-50%);
+}
+
+#home-search-form .form-group:hover + .form-group::before, 
+#home-search-form .form-group:hover::before,
+#home-search-form .form-group.focusing::before,
+#home-search-form .form-group.focusing + .form-group::before{
+	content: unset !important;
+}
+
+#home-search-form .form-group .label,
+#home-search-form .form-group label,
+#home-search-form .form-group input{
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+#home-search-form .form-group .label{
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+#home-search-form .form-group input,
+#home-search-form .form-group input:focus{
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+#home-search-form button[type="submit"]{
+	height: 100%;
+	border: none;
+	font-size: 13px;
+	color: #fff;
+	padding: 15px 20px;
+	background-image: linear-gradient(to right,#FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 100% );
+}
+
+#home-search-form button[type="submit"] > i{
+	margin-right: 7px;
+}
+
+/* HOME SEARCH SECTION END */
+
+/* BACKLIVEMATTER BLOCK BEGIN */
+#blacklivematter{
+	background-color: #000;
+	color: #fff;
+	padding: 50px;
+	min-height: 420px;
+	display: flex;
+	align-items: flex-end;
+}
+
+#blacklivematter-slogan{
+	width: 380px;
+}
+
+#blacklivematter-slogan h3{
+	font-size: 40px;
+}
+
+#blacklivematter-slogan p{
+	font-size: 17px;
+	font-weight: 300;
+}
+
+#blacklivematter-slogan .donate{
+	font-size: 18px;
+}
+
+/* BACKLIVEMATTER BLOCK END */
+
+/* HOME FEATURES */
+#top-features{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
