@@ -1,0 +1,16 @@
+.badge{
+	display: inline;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 9px;
+    padding: 3px 4px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+	font-weight: 500;
+	margin: 0px 5px;
+}
+
+.badge-white{
+
+}
